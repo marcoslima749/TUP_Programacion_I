@@ -1,0 +1,67 @@
+10
+D
+126099.1
+
+18
+E
+-31928.9
+
+28
+D
+44813.5
+
+30
+D
+43054.3
+
+30
+D
+142228.3
+
+13
+D
+88815
+
+24
+D
+42636.2
+
+25
+D
+13109.4
+
+3
+E
+-14878.3
+
+11
+E
+-112096.3
+
+8
+D
+109242.8
+
+21
+D
+92703.5
+
+26
+D
+48486.6
+
+15
+E
+-114601.8
+
+
+***************************************
+Respuesta Esperada:
+
+Saldo final: 477683.4
+Porcentaje Depositos: 71%
+Porcentaje Extracciones: 29%
+Depósito de mayor importe: 142228.3 dia 30 movimiento número 5
+El día 10 se realizaron 1 movimientos.
+
+***************************************
