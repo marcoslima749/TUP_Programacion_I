@@ -1,5 +1,8 @@
+
+
+
 Algoritmo U4Ejercicio16
-	Escribir "Ingrese una serie de números para conocer el máximo. Cuando hay ingresado todos los números repita el último dígito para conocer el resultado: "
+	Escribir "Ingrese una serie de nï¿½meros para conocer el mï¿½ximo. Cuando hay ingresado todos los nï¿½meros repita el ï¿½ltimo dï¿½gito para conocer el resultado: "
 	Leer n
 	maximo = n
 	anterior = n
@@ -15,5 +18,5 @@ Algoritmo U4Ejercicio16
 			anterior = n
 		FinSi
 	Mientras Que esIgual == Falso
-	Escribir "El máximo es: ", maximo
+	Escribir "El mï¿½ximo es: ", maximo
 FinAlgoritmo
