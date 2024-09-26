@@ -26,7 +26,7 @@ using namespace std;
 int main(){
     float medida = -1;
     int operacion = -1;
-    bool medidaIngresada = false, operacionIngresada = false;
+    bool primerIngreso = true;
 
     while(operacion != 0){
 
@@ -44,30 +44,42 @@ int main(){
             cout << "Ingrese opción: " << endl;
 
             cin >> operacion;
-            operacionIngresada = true;
 
+            if(primerIngreso) {
                 switch (operacion){
-                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
                     cout << "Ingrese la medida en metros:" << endl;
                     cin >> medida;
-                    medidaIngresada = true;
-                    operacion = -1;
-                    break;
-                case 2:
-                    cout << "La medida equivale a " << medida * 100 <<" centímetros." << endl << endl;
-                    break;
-                case 3 :
-                    cout << "La medida equivale a " << medida / 1000 << " kilómetros." << endl << endl;
-                    break;
-                case 4:
-                    cout << "La medida equivale a " << medida * 39.3701f << " pulgadas." << endl << endl;
-                    break;
-                case 5:
-                    cout << "La medida equivale a " << medida * 3.28084f << " pies." << endl << endl;
-                    break;
-                default:
+                    primerIngreso = false;
                     break;
                 }
+            }
+
+            switch (operacion){
+            case 1:
+                cout << "Ingrese la medida en metros:" << endl;
+                cin >> medida;
+                operacion = -1;
+                break;
+            case 2:
+                cout << "La medida equivale a " << medida * 100 <<" centímetros." << endl << endl;
+                break;
+            case 3 :
+                cout << "La medida equivale a " << medida / 1000 << " kilómetros." << endl << endl;
+                break;
+            case 4:
+                cout << "La medida equivale a " << medida * 39.3701f << " pulgadas." << endl << endl;
+                break;
+            case 5:
+                cout << "La medida equivale a " << medida * 3.28084f << " pies." << endl << endl;
+                break;
+            default:
+                break;
+            }
+            primerIngreso = false;
 
     }
     return 0;
