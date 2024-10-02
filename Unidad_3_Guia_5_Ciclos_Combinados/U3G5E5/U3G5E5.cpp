@@ -63,7 +63,7 @@ int totalImporte = 0, cantComandas = 0;
 
         cout << "Cantidad de Entradas: " << cantEntradas << endl;
         cout << "Cantidad de Principales: " << cantPrincipales << endl;
-        cout << "Cantidad de Entradas: " << cantEntradas << endl;
+        cout << "Cantidad de Postres: " << cantPostres << endl;
 
 
         cout << "Ingrese el número de mozo  "<< endl;
