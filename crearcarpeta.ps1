@@ -1,1 +1,1 @@
-New-Item -ItemType Directory -Path "$(Get-Location)\Unidad_3_Guia_5_Ciclos_Combinados\U3G5E12"; New-Item -ItemType File -Path "$(Get-Location)\Unidad_3_Guia_5_Ciclos_Combinados\U3G5E12\U3G5E12.cpp"; "/*"+"`n`n"+"*/" | Set-Content -Path "$(Get-Location)\Unidad_3_Guia_5_Ciclos_Combinados\U3G5E12\U3G5E12.cpp"
+New-Item -ItemType Directory -Path "$(Get-Location)\Unidad_5_Funciones\U5G1E1"; New-Item -ItemType File -Path "$(Get-Location)\Unidad_5_Funciones\U5G1E1\U5G1E1.cpp"; "/*"+"`n`n"+"*/" | Set-Content -Path "$(Get-Location)\Unidad_5_Funciones\U5G1E1\U5G1E1.cpp"
