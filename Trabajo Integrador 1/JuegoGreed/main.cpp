@@ -24,10 +24,8 @@ int main(){
 
 
 
-
-        cout << endl << "Presione cualquier tecla para continuar...";
-        system("pause>nul");
     }
     while (opcion != 0);
+
     return 0;
 }

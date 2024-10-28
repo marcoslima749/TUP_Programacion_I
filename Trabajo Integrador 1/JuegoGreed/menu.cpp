@@ -39,21 +39,26 @@ void ejecutarOpciones(int opcion, int &puntajeGanador, string &nombreGanador){
         break;
     case 3:
         //funciones para estadisticas
-        estadisticaGanador( puntajeGanador, nombreGanador);
+        mostrarEstadistica( puntajeGanador, nombreGanador);
+        cout <<endl<< "Presione una tecla para volver al menú..";
+        system("Pause>nul");
 
         break;
     case 4:
         mostrarCreditos();
+        cout <<endl<< "Presione una tecla para volver al menú..";
+        system("Pause>nul");
         break;
     case 0:
         cout << "¡¡¡Gracias por jugar GREED!!!" << endl;
+        cout <<endl;
         break;
     }
 }
 
-void estadisticaGanador(int puntajeGanador, string nombreGanador){
+void mostrarEstadistica(int puntajeGanador, string nombreGanador){
     if (puntajeGanador>0){
-      cout << "El puntaje mas alto es: " << puntajeGanador << " Jugador: " << nombreGanador << endl;
+      cout << "El puntaje mas alto es: " << puntajeGanador << endl<< "Jugador: " << nombreGanador << endl;
     }else {cout << "No hay datos para mostrar..."<<endl;}
 
 }

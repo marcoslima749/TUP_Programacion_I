@@ -3,5 +3,5 @@
 
 int opcionesDelJuego();
 void ejecutarOpciones(int opcion, int &puntajeGanador, std:: string &nombreGanador);
-void estadisticaGanador(int puntajeGanador, std::string nombreGanador);
+void mostrarEstadistica(int puntajeGanador, std::string nombreGanador);
 void mostrarCreditos();

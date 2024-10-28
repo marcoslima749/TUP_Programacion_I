@@ -57,8 +57,11 @@ string nombre;
 pedirNombre(nombre);
 system("cls");
 
-saludar(nombre);
-system ("pause");
+cout << "¡Hola " << nombre << "! " << "¡Bienvenido a GREED!" << endl;
+
+cout <<endl<< "Presione una tecla para iniciar el juego..";
+system ("pause>nul");
+
 system ("cls");
 
 
@@ -91,14 +94,15 @@ mostrarDados(dadosJuego,can);
 if (sonTodosIguales(dadosJuego,can)) {
 
  resultado[rondas-1]= resultado[rondas-1] + calcularPuntaje(dadosJuego,dadosBloqueadores,can) * 2;
+
 } else {
    resultado[rondas-1]= resultado[rondas-1] + calcularPuntaje(dadosJuego,dadosBloqueadores,can)  ;
 }
-
+cout << "Dados disponibles para la proxima tirada: " << can<< endl;
 
 finDelaPartida(resultado,rondas,can);
 cout<<endl<<"PUNTAJE RONDAS "<<endl;
-mostratPuntajeDeRonda(resultado,3);
+mostrarPuntajeDeRonda(resultado,3);
 puntajeTotal(resultado,3);
 
 
@@ -117,33 +121,27 @@ if (bandera == 2){
 
 
    }
-   //Para estadisticas
-   int estadistico=0;
-for (i=0; i<3; i++){
-    estadistico+=resultado[i];
-}
-   if (estadistico>puntajeGanador){
-    puntajeGanador=estadistico;
-    nombreGanador=nombre;
-    cout << "Felicidades, ganaste con el mayor puntaje!" << endl;
-   }
+   //Para estadisticas: calcula , guarda el mayor puntaje y muestra mensaje si fue el mas alto.
+   calcularEstadistica(resultado, nombre, puntajeGanador, nombreGanador);
 
+   mostrarNombre(nombre);
+   puntajeTotal(resultado,3);
 
-mostrarNombre(nombre);
-puntajeTotal(resultado,3);
+   cout <<endl<< "Presione una tecla para volver al menú..";
+   system("Pause>nul");
 
  }
 
 void pedirNombre(string &name) {
 
- cout<<"Por favor ingresar nombre: ";
+ cout<<"Por favor ingrese su nombre: ";
  cin>>name;
 
 }
 
 void saludar(string name){
 
-    cout << "¡Hola " << name << "! " << "¡Bienvenido!" << endl;
+    cout << "¡Hola " << name << "! " << "¡Bienvenido a GREED!" << endl;
 }
 
 void mostrarNombre(string name){
@@ -152,7 +150,7 @@ cout<< "Jugador: " << name <<endl;
 
 }
 
-void mostratPuntajeDeRonda(int vec[],int cantidad) {
+void mostrarPuntajeDeRonda(int vec[],int cantidad) {
 
 int i;
 
@@ -177,24 +175,21 @@ for (i=0;i<cantidad;i++){
     resultado = resultado + vec[i];
 
 }
-cout << "PUNTAJE TOTAL: " << resultado << endl;
+cout << "Puntaje Total: " << resultado << endl;
 
 }
 
 
 void finDelaPartida(int dadosPuntajes[],int cantidadDeRondas, int cantidadDeDados){
- int i;
-
 
   if (cantidadDeDados ==0 ) {
 
-    dadosPuntajes[cantidadDeRondas-1]=0;
+     dadosPuntajes[cantidadDeRondas-1]=0;
+    }
 
-  }
+}
 
-  }
-
-  bool sonTodosIguales(int vec[],int tam) {
+bool sonTodosIguales(int vec[],int tam) {
 
    for (int i = 1; i < tam; i++) {
         if (vec[i] != vec[0]) {
@@ -203,4 +198,19 @@ void finDelaPartida(int dadosPuntajes[],int cantidadDeRondas, int cantidadDeDado
     }
     return true;
 
-  }
+}
+  // Para calcular estadistica
+void calcularEstadistica(int resultado[], string nombre, int &puntajeGanador, string &nombreGanador){
+    int estadistico=0;
+    for (int i=0; i<3; i++){
+    estadistico+=resultado[i];
+    }
+
+    if (estadistico > puntajeGanador){
+    puntajeGanador = estadistico;
+    nombreGanador = nombre;
+    cout << "    ¡Felicidades "<< nombre << ", ganaste con el mayor puntaje!" << endl<<endl;
+
+    }
+
+}
