@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1729885976 source:c:\users\kikck\onedrive\escritorio\tpintegrador\juegogreed\juego.cpp
+	"juego.h"
+	<iostream>
+
+1729883935 source:c:\users\kikck\onedrive\escritorio\tpintegrador\juegogreed\main.cpp
+	<iostream>
+	<ctime>
+	"menu.h"
+	"juego.h"
+
+1729883935 c:\users\kikck\onedrive\escritorio\tpintegrador\juegogreed\menu.h
+	<string>
+
+1729884607 source:c:\users\kikck\onedrive\escritorio\tpintegrador\juegogreed\menu.cpp
+	<iostream>
+	"menu.h"
+	"juego.h"
+
+1729971095 c:\users\kikck\onedrive\escritorio\tpintegrador\juegogreed\juego.h
+	<string>
+
