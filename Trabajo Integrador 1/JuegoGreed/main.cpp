@@ -1,31 +1,28 @@
-#include <iostream>
 #include <ctime>
-#include "menu.h"
+#include <iostream>
+#include <vector>
+
 #include "juego.h"
-
-
-
+#include "menu.h"
 
 using namespace std;
 
-int main(){
-
+int main() {
   int opcion;
-  int puntajeGanador=0;
+  int puntajeGanador = 0;
   string nombreGanador;
+  int rankingPuntos[6]{7,5,3,2,1,0};
+  string rankingNombres[6]{"Sonic","Mario","Kirby","IceClimber","JohnWick",""};
 
 
   srand(time(0));
 
-  do{
-        system("cls");
-        opcion=opcionesDelJuego();
-        ejecutarOpciones(opcion, puntajeGanador, nombreGanador);
+  do {
+    system("cls");
+    opcion = opcionesDelJuego();
+    ejecutarOpciones(opcion, puntajeGanador, nombreGanador, rankingPuntos, rankingNombres);
 
+  } while (opcion != 0);
 
-
-    }
-    while (opcion != 0);
-
-    return 0;
+  return 0;
 }

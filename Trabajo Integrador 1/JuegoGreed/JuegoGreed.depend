@@ -20,3 +20,26 @@
 1729971095 c:\users\kikck\onedrive\escritorio\tpintegrador\juegogreed\juego.h
 	<string>
 
+1730172352 source:c:\users\marcos\documents\repos\tup_programacion_i\trabajo integrador 1\juegogreed\main.cpp
+	<ctime>
+	<iostream>
+	"juego.h"
+	"menu.h"
+
+1730251315 c:\users\marcos\documents\repos\tup_programacion_i\trabajo integrador 1\juegogreed\juego.h
+	<string>
+
+1730158143 c:\users\marcos\documents\repos\tup_programacion_i\trabajo integrador 1\juegogreed\menu.h
+	<string>
+
+1730250712 source:c:\users\marcos\documents\repos\tup_programacion_i\trabajo integrador 1\juegogreed\juego.cpp
+	"juego.h"
+	<iostream>
+	<vector>
+
+1730251381 source:c:\users\marcos\documents\repos\tup_programacion_i\trabajo integrador 1\juegogreed\menu.cpp
+	"menu.h"
+	<iostream>
+	<string>
+	"juego.h"
+
